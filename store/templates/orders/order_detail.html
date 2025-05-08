@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Pedido #{{ order.id }}</h1>
+    <h4>Estado: {{ order.get_status_display }}</h4>
+    <h4>Total: ${{ order.total_price }}</h4>
+    <h4>Fecha: {{ order.created_at }}</h4>
+    
+    <div class="card mt-3 shadow-sm">
+        <div class="card-header">
+            <h5 class="card-title">Productos en el Pedido</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for item in order_items %}
+                    <li class="list-group-item">
+                        <strong>{{ item.product.name }}</strong> x {{ item.quantity }} - ${{ item.total_price }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        {% if request.user.is_staff %}
+            <a href="{% url 'admin_orders' %}" class="btn btn-primary">Volver a los pedidos de clientes</a>
+        {% else %}
+            <a href="{% url 'user_orders' %}" class="btn btn-primary">Volver a mis pedidos</a>
+        {% endif %}
+    </div>
+{% endblock %}
