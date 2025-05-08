@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.banner-img {
+      width: 100vw;
+      height: auto;
+      object-fit: contain; 
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; 
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-text.font-weight-bold {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.no-hover:hover {
+    transform: none !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
