@@ -1,5 +1,8 @@
 # StrongMarket
 ---
+### Enlace de proyecto en la nube
+https://villedo.pythonanywhere.com/product_list
+
 #### Descripción del sistema: 
 Es una aplicación web desarrollada con Django que funciona como una tienda en línea para productos relacionados con el gimnasio. Los usuarios podrán explorar el catalogo y ver los productos sin necesidad de iniciar sesión, pero solo los usuarios registrados podrán realizar compras. El sistema incluirá funciones diferenciadas según el tipo de usuario, permitiendo personalizar ciertas secciones y accesos. Además, que la tienda será de productos únicos por la empresa ficticia, por lo que únicamente los administradores podrán subir nuevos productos.
 
@@ -20,4 +23,6 @@ Los actores involucrados en este proyecto serán los administradores, usuarios r
 -	Las imágenes de los productos deben estar optimizadas para web, evitando tiempos de carga excesivos.
 -	La interfaz debe ser sencilla e intuitiva para los usuarios, sin necesidad de capacitación previa.
 
+#### Capturas de pantalla
 
+[Carpeta](/Capturas)
